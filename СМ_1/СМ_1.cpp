@@ -20,7 +20,7 @@ public:
         }
     }
 
-    // Перегрузка оператора + для сложения двух полиномов
+    // Перегрузка оператора + сложение двух полиномов
     Polynomial operator+(const Polynomial& other) const 
     {
         size_t commonDegree = std::min(coefficients.size(), other.coefficients.size());
@@ -45,7 +45,7 @@ public:
         return result;
     }
 
-    // Метод для вычисления значения полинома для заданного значения x
+    // Метод для вычисления значения полинома для значения x
     int evaluate(int x) const 
     {
         int result = 0;
@@ -60,7 +60,7 @@ public:
         return result;
     }
 
-    // Метод для отображения полинома в удобочитаемом формате
+    // Метод для вывода полинома
     void display() const 
     {
         for (int i = coefficients.size() - 1; i >= 0; --i) 
